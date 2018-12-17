@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		B044F21021C7AA8000BCBD9F /* testingFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = B044F20E21C7AA8000BCBD9F /* testingFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B044F21721C7AA9E00BCBD9F /* libsioclient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B044F21621C7AA9E00BCBD9F /* libsioclient.a */; };
+		B044F21A21C7AB0D00BCBD9F /* testVC.h in Headers */ = {isa = PBXBuildFile; fileRef = B044F21821C7AB0D00BCBD9F /* testVC.h */; };
+		B044F21B21C7AB0D00BCBD9F /* testVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B044F21921C7AB0D00BCBD9F /* testVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B044F20B21C7AA8000BCBD9F /* testingFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = testingFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B044F20E21C7AA8000BCBD9F /* testingFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testingFramework.h; sourceTree = "<group>"; };
 		B044F20F21C7AA8000BCBD9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B044F21621C7AA9E00BCBD9F /* libsioclient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libsioclient.a; sourceTree = "<group>"; };
+		B044F21821C7AB0D00BCBD9F /* testVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testVC.h; sourceTree = "<group>"; };
+		B044F21921C7AB0D00BCBD9F /* testVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B044F21721C7AA9E00BCBD9F /* libsioclient.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -30,6 +37,7 @@
 		B044F20121C7AA8000BCBD9F = {
 			isa = PBXGroup;
 			children = (
+				B044F21621C7AA9E00BCBD9F /* libsioclient.a */,
 				B044F20D21C7AA8000BCBD9F /* testingFramework */,
 				B044F20C21C7AA8000BCBD9F /* Products */,
 			);
@@ -47,6 +55,8 @@
 			isa = PBXGroup;
 			children = (
 				B044F20E21C7AA8000BCBD9F /* testingFramework.h */,
+				B044F21821C7AB0D00BCBD9F /* testVC.h */,
+				B044F21921C7AB0D00BCBD9F /* testVC.m */,
 				B044F20F21C7AA8000BCBD9F /* Info.plist */,
 			);
 			path = testingFramework;
@@ -60,6 +70,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B044F21021C7AA8000BCBD9F /* testingFramework.h in Headers */,
+				B044F21A21C7AB0D00BCBD9F /* testVC.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B044F21B21C7AB0D00BCBD9F /* testVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +282,10 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.testingFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -292,6 +308,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.testingFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
